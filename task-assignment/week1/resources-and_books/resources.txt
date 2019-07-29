@@ -1,0 +1,13 @@
+HTML Basic:
+https://www.w3schools.com/html/html_basic.asp
+https://www.w3schools.com/html/html_attributes.asp
+https://www.w3schools.com/html/html_layout.asp
+
+CSS Basic:
+https://www.freecodecamp.org/news/get-started-with-css-in-5-minutes-e0804813fc3e/
+https://www.w3schools.com/cssref/pr_background-image.asp
+https://www.w3schools.com/css/css_font.asp
+https://www.w3schools.com/cssref/pr_text_text-align.asp
+
+Whatever you are not sure about - google it or ask in the group, navigation will be provided.
+
