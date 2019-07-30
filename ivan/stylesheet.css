@@ -1,0 +1,22 @@
+.container {
+    font-family: Helvetica;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    color: khaki;
+    background-image: url(pattern.jpeg)
+}
+
+#div {
+    background-color: mediumspringgreen;
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+#blue {
+    font-family: Helvetica;
+    font-weight: bold;
+    color: blue;
+}
