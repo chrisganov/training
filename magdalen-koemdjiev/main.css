@@ -1,0 +1,47 @@
+
+.brush{
+    color: white;
+    background-color: mediumspringgreen;
+    font-size: 32px;
+    font-family: Helvetica;
+}
+.brushes{
+    font-family:Helvetica;
+    font-weight: bold;
+    color: blue;
+}
+.gosho{
+color: white;
+background-color: lightcoral;
+font-size: 32px;
+}
+.tosho{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.ivo{
+    color: blue;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mitko{
+    color: white;
+    background-color: skyblue;
+    font-size: 32px;
+}
+.gero{
+    color: blue;
+}
+.snimka{
+    height: 100px;
+    width: 1000px;
+    margin-left: 200px;
+}
+.head{
+    margin-top: -110px;
+    margin-left: 400px;
+    font-size: 100px;
+    color: gold;
+    
+}
