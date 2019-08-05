@@ -1,5 +1,6 @@
+/* Notice a pattern. All of the text is only one font-family. Maybe the whole body font-family shouold have been Halvetica ? */
 
-.topElem{
+.topElem{  /* CamelCase is used only in javascript. Css nameing is with dashes (ex: top-elm) */
   font-family: Helvetica;
   font-size: 100px;
   font-weight: bold;

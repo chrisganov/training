@@ -22,7 +22,7 @@ nav > a {
     color: seashell
 }
 main{
-    border-top: 1px solid seashell;
+    /* border-top: 1px solid seashell; Read instructions!!! - As per instructions, the border should be a bottom one, therefore it should be attached the header */
     position: relative;
     text-align: center;
     top: 69px;  
