@@ -1,0 +1,36 @@
+/* Notice a pattern. All of the text is only one font-family. Maybe the whole body font-family shouold have been Halvetica ? */
+
+.topElem{  /* CamelCase is used only in javascript. Css nameing is with dashes (ex: top-elm) */
+  font-family: Helvetica;
+  font-size: 100px;
+  font-weight: bold;
+  color:khaki;
+  text-align: center;
+  background-image: url("pattern.jpeg");
+  margin-bottom: 5%;
+}
+.border{
+  font-family: helvetica;
+  font-size: 32px;
+  font-weight: bold;
+  color:white;
+  margin-bottom: 2%;
+  }
+.img{
+  width: 300px;
+  height: 300px;
+  }
+.low-blue-text{
+  font-family: Helvetica;
+  font-weight: bold;
+  color:blue;
+}
+#green{
+  background-color: mediumspringgreen;
+}
+#red{
+  background-color:lightcoral;
+}
+#blue{
+  background-color: skyblue;
+}
