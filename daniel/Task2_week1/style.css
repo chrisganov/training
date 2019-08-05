@@ -1,4 +1,19 @@
+/* There is a convention to write the css rules.
+1st. Element selection (body, header, etc )
+2nd. Class selection (.logo, .nav, etc)
+3rd. Id Selections (#padding, #my-list-style, etc.)
 
+However, I use another way which is maybe more organized - position selectors based on html position. Example 
+
+body {}
+header{}
+.logo{}
+ul{}
+li{}
+ etc
+ 
+ Your choice.
+ */
 body{
     font-family: Helvetica;
     font-size: 22px;
@@ -6,8 +21,9 @@ body{
     background-color: black;
     opacity: 0.9;
     text-align: center;
-    max-width: 1300px;
-    min-width: 1300px;
+    /* max-width: 1300px; was not in the instructions */
+    /* min-width: 1300px; was not in the instructions */
+    /* width: 100% THIS IS what you were looking for. It scales on 100% of the screen, no matter how wide the screen is */
 }
 .logo{
     margin: 10px;
@@ -33,15 +49,21 @@ ul li {
     text-decoration: underline;
 }
 header{
-    position: static;
+    /* position: static; Wrong - as per instructions it should be fixed, not static */
     width: 100%;
     border-bottom: 1px solid seashell;
     height: 69px;
-    max-width: 1300px;
+    /* max-width: 1300px; was not in the instructions. 
+    Also, note that yoou should either use max-width or use width: 100%.
+    Why? Because if my screen is wider it will not scale 100% of the screen width - it will scale 1300px which could be less than what I have.
+     */
+    /* z-index: 1; was missing */
 }
 img {
     max-width: 100%;
+    /* width: 100%; use this if you want to scale 100% */
     max-height: 100%;
+    /* height: 100% use this if you want to scale 100% */
 }
 .container{
     margin: auto;
@@ -62,6 +84,7 @@ img {
    width: 1000px;
    margin-top: 100px;
    margin-left: 150px;
+   /* not centered */
 }
 .img5{
     height: 200px;

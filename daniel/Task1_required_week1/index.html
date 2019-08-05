@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <head>
-            <link rel="stylesheet" type="text/css" href="style.css">
-        </head>
-        
+    <!-- WRONG:
+        <body> 
+        Head is the first element after html element. After you close the 'head' element it is the body element.
+        Imagine it like a persoon - you first have the head for the logic and how it behaves. After the head comes the body. -->
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body> <!-- This is the correct place for boody element-->
         <div class = "intro">Dasmoto's Arts & Crafts</div>
   
         <h3 class = "brush">Brushes</h3>
         <img src = "hacksaw.jpeg"/>
-
         <p><strong>Hacksaw Brushes</strong></p>
         <p>Made of the highest quality oak, Hacksaw brushes are known for their weight and the ability to hold paint in large amounts.Avaiable in different sizes.<mark class = "colorized">Starting at $3.00 / brush</mark></p>
 
