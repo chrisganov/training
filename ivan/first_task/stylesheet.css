@@ -1,14 +1,17 @@
+/*  Notice a pattern - all of the text is indicated as Helvetica, maybe the whole body element should have been set as Helvetica?  */
+
+/* Do not use ids for styling an element - use only class */
 .container {
     font-family: Helvetica;
     font-size: 100px;
     font-weight: bold;
     text-align: center;
     color: khaki;
-    background-image: url(pattern.jpeg)
+    background-image: url(pattern.jpeg) /* this is not the URL for the pattern.jpeg, it should be images/pattern.jpeg */
 }
 
 #div {
-    background-color: mediumspringgreen;
+    background-color: mediumspringgreen; /* Why are all ribbons the same color? Read instructions */ 
     font-family: Helvetica;
     font-size: 32px;
     font-weight: bold;
