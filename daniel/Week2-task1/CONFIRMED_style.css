@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+    font-size: 32px;
+}
+.container{
+    color: snow;
+    margin: auto;
+    text-align: center;
+    max-width: 1920px;
+  }
+  /*footer style*/
+  footer{
+    width: 100%;
+    margin: auto;
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+  }
+img{
+    height: 400px;
+}
+input[type=submit] {/*button*/
+  background-color: green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+input[type=submit]:hover {/*button*/
+  background-color: yellowgreen;
+  color: darkblue;
+}

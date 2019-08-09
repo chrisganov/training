@@ -1,0 +1,87 @@
+/*header & navigation style*/
+header{
+    width: 100%;
+    height: 70px;
+    background-image:url("blue.jpg");
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    top: 0;
+}
+a{
+    width: 300px;
+    margin: auto;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+a:hover{
+ background-image: url("yellow.jpg");
+ color: black;
+}
+/*info box*/
+.wrapper {
+    margin-top: 100px;
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+  }
+  
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+  .main {
+    color: snow;
+    justify-content: left;
+  }
+  .logo{
+    margin-top: 50px;
+    margin-right: 50px;
+  }
+  @media all and (min-width: 600px) {
+    .logo { flex: 1 0 0; }
+  }
+  @media all and (min-width: 800px) {
+    .main{flex: 3 0px; }
+    .logo{ order: 1; } 
+    .main{ order: 2; }
+  }
+/*profile pic*/
+.profile{
+    height: 500px;
+    padding-left: 150px;
+}
+/*About me text style*/
+.info{
+    color: white;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+p.titleInfo{
+    color: gold;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+/*page style*/
+body{
+    background-color: black;
+    font-size: 32px;
+}
+main{
+    max-width: 1920px;
+    margin: auto;
+}
+/*footer style*/
+footer{
+    width: 100%;
+    margin-top: 150px;
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+}
+
