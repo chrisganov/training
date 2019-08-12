@@ -1,0 +1,17 @@
+body{
+    font-family: Cambria;
+}
+
+main{
+    text-align: center; 
+}
+main > img{
+    width: 100%;
+    height: 1000px; 
+    
+    /*above works, but more dynamic would have been it if was 100%... 
+    uncomment below and you will see that there are no visible changes until you srink the height of your browser -
+    that would scale perfect with smartphones - keep in mind for future use.*/
+    /* height: 100% */
+}
+

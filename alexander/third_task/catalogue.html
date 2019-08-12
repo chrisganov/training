@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sunko industries</title>
-    <link rel='icon' href='favicon.jpg' type='image/x-icon'/ >
-    <link rel="stylesheet" href="about.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-</head>
-<body>
+    <link rel='icon' href='./images/favicon.jpg' type='image/x-icon'/ >
+    <link rel="stylesheet" href="./css/about.css" /> <!-- Im confused... isn't this catalogue?-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <div class="navbar-fixed">
-            <nav>
-              <div class="nav-wrapper black">
-                <a href="home.html" class="brand-logo">S.industries</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-              <ul class="right hide-on-med-and-down">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="catalogue.html">Catalogue</a></li>
-                <li><a href="contact.html">Contact us</a></li>  
-              </ul>
-              </div>
-            </nav>
-        </div>
-        <ul class="sidenav" id="mobile-demo">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="catalogue.html">Catalogue</a></li>
-          <li><a href="contact.html">Contact us</a></li>
-        </ul>
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper black">
+            <a href="home.html" class="brand-logo">S.industries</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+              ><i class="material-icons">menu</i></a
+            >
+            <ul class="right hide-on-med-and-down">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="catalogue.html">Catalogue</a></li>
+              <!-- Why do I have catalogue when im in catalogue ? -->
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <!-- Same Question as above ... ? -->
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
     </header>
-<main>
-    <h1>FOR SHOPPING GO TO CONTACT US</h1>
-    <div class="row col s12">
+    <main>
+      <!-- I almost missed the prices - they should be more visible -> font or color.. ? -->
+
+      <!-- 
+          I made the same code for the grid as your but with some simpler code.
+          The idea is:
+          "row" -> container for grid
+          "col s12" -> takes 100% width
+          "col s6" -> takes 50% width
+
+          the way you have done it is creating a conflicting classes -> too unstable. Review it and get back to me for further assistance if needed.
+    -->
+      <h1>FOR SHOPPING GO TO CONTACT US</h1>
+      <div class="row col s12">
         <div class="col s12 l6">
             <div class="card">
                 <div class="card-image">
-                    <img src="ak-sale.jpg" alt="ak47" height="300px">
+                    <img src="./images/ak-sale.jpg" alt="ak47" height="300px">
                 </div>
                 <div class="card-content">
                     <span class="card-title">
@@ -50,7 +71,7 @@
         <div class="col s12 l6">
                 <div class="card">
                     <div class="card-image">
-                        <img src="rpg-sale.jpg" alt="rpg" height="300px">
+                        <img src="./images/rpg-sale.jpg" alt="rpg" height="300px">
                     </div>
                     <div class="card-content">
                         <span class="card-title">
@@ -63,7 +84,7 @@
             <div class="col s12 l6">
                     <div class="card">
                         <div class="card-image">
-                            <img src="rpk-sale.jpg" alt="rpk" height="300px">
+                            <img src="./images/rpk-sale.jpg" alt="rpk" height="300px">
                         </div>
                         <div class="card-content">
                             <span class="card-title">
@@ -76,7 +97,7 @@
             <div class="col s12 l6">
                     <div class="card">
                         <div class="card-image">
-                            <img src="svd2-sale.jpg" alt="svd" height="300px">
+                            <img src="./images/svd2-sale.jpg" alt="svd" height="300px">
                         </div>
                         <div class="card-content">
                             <span class="card-title">
@@ -89,7 +110,7 @@
             <div class="col s12 l6">
                     <div class="card">
                         <div class="card-image">
-                            <img src="awp-sale.jpg" alt="awp" height="300px">
+                            <img src="./images/awp-sale.jpg" alt="awp" height="300px">
                         </div>
                         <div class="card-content">
                             <span class="card-title">
@@ -102,7 +123,7 @@
             <div class="col s12 l6">
                     <div class="card">
                         <div class="card-image">
-                            <img src="m16-sale.jpg" alt="m16" height="300px">
+                            <img src="./images/m16-sale.jpg" alt="m16" height="300px">
                         </div>
                         <div class="card-content">
                             <span class="card-title">
@@ -115,7 +136,7 @@
             <div class="col s12 l6">
                     <div class="card">
                         <div class="card-image">
-                            <img src="balaclava-sale.jpg" alt="m16" height="300px">
+                            <img src="./images/balaclava-sale.jpg" alt="m16" height="300px">
                         </div>
                         <div class="card-content">
                             <span class="card-title">
@@ -128,7 +149,7 @@
             <div class="col s12 l6">
                     <div class="card">
                         <div class="card-image">
-                            <img src="barett-sale.jpg" alt="m16" height="300px">
+                            <img src="./images/barett-sale.jpg" alt="m16" height="300px">
                         </div>
                         <div class="card-content">
                             <span class="card-title">
@@ -139,19 +160,134 @@
                     </div>
             </div>
     </div>        
-</main>
-    <footer class="page-footer black">
-        <div class="footer-copyright">
-          © 2019 Sunko Industries
-          <div class="right" id="rights">All rights reserved</div>
+
+      <!-- <div class="row">
+        <div class="col s6">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/ak-sale.jpg" alt="ak47" height="300px" />
+            </div>
+            <div class="card-content">
+              <span class="card-title">
+                AK47
+              </span>
+              <p>MOST COMMONLY USED WEAPON IN THE WORLD! 2500$</p>
+            </div>
+          </div>
         </div>
+        <div class="col s6">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/rpg-sale.jpg" alt="rpg" height="300px" />
+            </div>
+            <div class="card-content">
+              <span class="card-title">
+                RPG-7
+              </span>
+              <p>HIGHLY DESTRUCTIVE GOOD AGAINST ARMORED! 3100$</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/rpk-sale.jpg" alt="rpk" height="300px" />
+            </div>
+            <div class="card-content">
+              <span class="card-title">
+                RPK
+              </span>
+              <p>
+                VERY FAST RATE OF FIRE WITH LITTLE RECOIL BEST USE STATIONARY!
+                2700$
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/svd2-sale.jpg" alt="svd" height="300px" />
+            </div>
+            <div class="card-content">
+              <span class="card-title">
+                SVD
+              </span>
+              <p>SEMI AUTO SNIPER RIFLE GOOD TO 1KM LONG SHOTS! 3500$</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/awp-sale.jpg" alt="awp" height="300px" />
+            </div>
+            <div class="card-content">
+              <span class="card-title">
+                AWP
+              </span>
+              <p>MAGNUM BOLT SNIPER RIFLE GOOD TO UP 2KM LONGSHOTS! 4000$</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/m16-sale.jpg" alt="m16" height="300px" />
+            </div>
+            <div class="card-content">
+              <span class="card-title">
+                M16
+              </span>
+              <p>HIGHLY ACCURATE ASSAULT RIFLE! 3000$</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/balaclava-sale.jpg" alt="m16" height="300px" />
+            </div>
+            <div class="card-content">
+              <span class="card-title">
+                BALACLAVA
+              </span>
+              <p>100% COTTON PRODUCED BY ISIS! 100$</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/barett-sale.jpg" alt="m16" height="300px" />
+            </div>
+            <div class="card-content">
+              <span class="card-title">
+                50 CAL
+              </span>
+              <p>
+                BIGGEST CALIBER FOR SNIPER HIGHLY RECOMMENDED FOR EXTREEME
+                DISTANCES! 5000$
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+
+    </main>
+    <footer class="page-footer black">
+      <div class="footer-copyright">
+        © 2019 Sunko Industries
+        <div class="right" id="rights">All rights reserved</div>
+      </div>
     </footer>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script>
-$(document).ready(function(){
-$('.sidenav').sidenav();
-});
-</script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".sidenav").sidenav();
+      });
+    </script>
+  </body>
 </html>

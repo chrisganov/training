@@ -1,0 +1,6 @@
+body{
+    font-family: Cambria;
+}
+/* .card{               ------------- NEVER configure manually a predefined classes. Add an additioanl class within the class and chain it -> otherwise it will make global issues with the site
+    width: 400px;
+} */
