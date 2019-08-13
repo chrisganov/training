@@ -3,7 +3,7 @@ header{
     min-width: 600px;
     width: 100%;
     height: 70px;
-    background-image:url("blue.jpg");
+    background-image:url("../images/blue.jpg");
     z-index: 1;
     display: flex;
     position: fixed;
@@ -19,7 +19,7 @@ a{
     text-align: center;
 }
 a:hover{
- background-image: url("yellow.jpg");
+ background-image: url("../images/yellow.jpg");
  color: black;
 }
 /*intro section style*/
@@ -69,7 +69,7 @@ h2{
     margin-top: 50px;
     margin-right: 50px;
   }
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 600px) { /* find an simpler  way -> maybe use span instead of article?  Articles is for bigger text */ 
     .logo { flex: 1 0 0; }
   }
   @media all and (min-width: 800px) {
@@ -116,4 +116,3 @@ footer{
     font-size: 22px;
     color: white;
 }
-
