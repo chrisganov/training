@@ -49,13 +49,3 @@ body{
     width: 1500px;
     justify-content: center;
 }
-/*footer grid*/
-    .item1 { grid-area: left; }
-    .item2 { grid-area: right; }
-    .grid-container {
-    display: grid;
-    grid-template-areas:
-    'left left right right right';
-    max-width: 1920px;
-    margin: auto;
-}
