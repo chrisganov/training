@@ -1,67 +1,32 @@
-/*header & navigation style*/
-header{
-    min-width: 600px;
-    width: 100%;
-    height: 70px;
-    background-image:url("../images/blue.jpg");
-    z-index: 1;
-    display: flex;
-    position: fixed;
-    top: 0;
+.nav-wrapper{
+  width: 100%;
 }
-a{
-    width: 300px;
-    margin: auto;
-    font-weight: bold;
-    font-size: 20px;
-    font-style: italic;
-    color: white;
-    text-align: center;
+.nav-wrapper .brand-logo img {
+  height: 64px;
 }
-a:hover{
- background-image: url("../images/yellow.jpg");
- color: black;
+main{
+  margin: auto;
+  max-width: 1920px;
+  min-width: 900px;
 }
-/*intro section style*/
-.sitelogo {
-    height: 150px;
-    margin: 50px auto;
-    display: flex;
-}
-.gamepic {
-    height: 150px;
-    margin: 50px auto 0px auto;
-    display: flex;
-    justify-content: left;
-}
-.intro{
-    margin: 100px auto 0 auto;
-    width: 100%;
-    height: 250px;
-    font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
-    color: snow;
-}
-h2{
-    font-size: auto;
-    height: 50px;
-    margin: 20px;
-    text-align: center;
+body{
+  min-width: 450px;
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif
 }
 /*games boxes*/
 .wrapper {
     display: flex;  
     flex-flow: row wrap;
-    font-weight: bold;
     text-align: center;
   }
-  
   .wrapper > * {
+    font-weight: bold;
     padding: 10px;
     flex: 1 100%;
   }
   .main {
-    color: snow;
+    color: black;
     justify-content: center;
     background-image: black;
   }
@@ -70,49 +35,27 @@ h2{
     margin-right: 50px;
   }
   @media all and (min-width: 600px) { /* find an simpler  way -> maybe use span instead of article?  Articles is for bigger text */ 
-    .logo { flex: 1 0 0; }
+    .logo { flex: 1 0 0; }            /* arcticle replaced with span, tried for simpler way with grid but it was not looking as i expected - prob bad english :) :D*/
   }
   @media all and (min-width: 800px) {
     .main{flex: 3 0px; }
     .logo{ order: 1; } 
     .main{ order: 2; }
   }
-/*----------------------- Title's bars style -------------------------*/
-.WoW{
-    color: yellowgreen;
-    background-color:blue;
-}
-.CSGO{
-    background-color: orange;
-}
-.Dota2{
-    color: white;
-    background-color: red;
-}
-/*-------------------------------------------------------------------*/
 /*section title's style*/
 .WoW, .CSGO, .Dota2{
-    height: 50px;
+    height: 80px;
     margin: 50px;
     width: 1500px;
     justify-content: center;
-    font-weight: bold;
 }
-/*page style*/
-body{
-    min-width: 600px;
-    background-color: black;
-    font-size: 32px;
-}
-main{
+/*footer grid*/
+    .item1 { grid-area: left; }
+    .item2 { grid-area: right; }
+    .grid-container {
+    display: grid;
+    grid-template-areas:
+    'left left right right right';
     max-width: 1920px;
     margin: auto;
-}
-/*footer style*/
-footer{
-    width: 100%;
-    margin: auto;
-    font-weight: 500;
-    font-size: 22px;
-    color: white;
 }
