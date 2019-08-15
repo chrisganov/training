@@ -13,7 +13,8 @@ header{
     z-index: 1;
     background-color: black; 
     height: 69px; 
-    /* top: 0px  UNCOMMENT ME and see the differencet with the header*/
+    top: 0px;
+    border-bottom: solid seashell;
 }
 nav{
     position: absolute;
@@ -23,9 +24,6 @@ nav > a {
     color: seashell
 }
 main{
-    /* border-top: 1px solid seashell; Read instructions!!! - As per instructions, the border should be a bottom one, therefore it should be attached the header */
-
-    /*  THIS IS STILL MISSING !!!! */
     position: relative;
     text-align: center;
     top: 69px;  
@@ -34,6 +32,7 @@ footer{
     text-align: left;
     margin-left:20px;
     padding-top: 40px;
+    bottom: 0px;
 }
 .logo{  
     position: absolute;

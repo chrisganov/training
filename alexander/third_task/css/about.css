@@ -4,13 +4,11 @@ body{
 main{
     text-align: center;
 }
-main > h1{
-    font-weight: bold;
-}
-main > p{
+p{
     width: 100%;
-    font-size: 20px;
+    font-size: 30px;
 }
 main > img{
     width: 100%;
 }
+
