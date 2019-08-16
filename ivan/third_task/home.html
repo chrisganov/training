@@ -1,0 +1,50 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <title>Vani Development</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link rel="stylesheet" href="./css/home.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+    </head>
+    <body>
+        <header>
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper red">
+                        <a href="home.html" class="brand-logo">Home</a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="catalogue.html">Catalogue</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact_me.html">Contact Me</a></li>
+                         </ul>
+                    </div>
+                </nav>
+            </div>
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact_me.html">Contact Me</a></li>
+            </ul>
+        </header>
+        <main>
+            <h2>I present you the best hyper cars... <a href="catalogue.html">Catalogue</a></h1>
+            <img src="./images/koenigsegg-regera-background.jpg" alt="Agera One:1"><h3>Koenigsegg!</h3>
+        </main>
+        <footer class="page-footer red">
+            <div class="footer-copyright">
+                © 2019 Vani Development
+                <div class="right" id="rights">All rights reserved</div>
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+        $(document).ready(function(){
+        $('.sidenav').sidenav();
+        });
+        </script>
+    </body>
+</html>
