@@ -14,6 +14,9 @@ body{
   font-size: 26px;
   font-family: Arial, Helvetica, sans-serif
 }
+a{
+  font-weight: bold;
+}
 /*games boxes*/
 .wrapper {
     display: flex;  
@@ -34,8 +37,8 @@ body{
     margin-top: 50px;
     margin-right: 50px;
   }
-  @media all and (min-width: 600px) { /* find an simpler  way -> maybe use span instead of article?  Articles is for bigger text */ 
-    .logo { flex: 1 0 0; }            /* arcticle replaced with span, tried for simpler way with grid but it was not looking as i expected - prob bad english :) :D*/
+  @media all and (min-width: 600px) {
+    .logo { flex: 1 0 0; }           
   }
   @media all and (min-width: 800px) {
     .main{flex: 3 0px; }
