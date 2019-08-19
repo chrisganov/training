@@ -1,0 +1,54 @@
+.nav-wrapper{
+  width: 100%;
+}
+.nav-wrapper .brand-logo img {
+  height: 64px;
+}
+main{
+  margin: auto;
+  max-width: 1920px;
+  min-width: 900px;
+}
+body{
+  min-width: 450px;
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif
+}
+a{
+  font-weight: bold;
+}
+/*games boxes*/
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    text-align: center;
+  }
+  .wrapper > * {
+    font-weight: bold;
+    padding: 10px;
+    flex: 1 100%;
+  }
+  .main {
+    color: black;
+    justify-content: center;
+    background-image: black;
+  }
+  .logo{
+    margin-top: 50px;
+    margin-right: 50px;
+  }
+  @media all and (min-width: 600px) {
+    .logo { flex: 1 0 0; }           
+  }
+  @media all and (min-width: 800px) {
+    .main{flex: 3 0px; }
+    .logo{ order: 1; } 
+    .main{ order: 2; }
+  }
+/*section title's style*/
+.WoW, .CSGO, .Dota2{
+    height: 80px;
+    margin: 50px;
+    width: 1500px;
+    justify-content: center;
+}
