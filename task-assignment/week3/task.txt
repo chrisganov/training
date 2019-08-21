@@ -24,4 +24,35 @@
  Log the folling string in the console (using a template string) "My name is (your name). I am (your age) years old in human years which is (your dog age) years old in dog years."
 
  
+Task 3:
+Create a variable that is equal to a whole number which is a random number times 8
+Create a variable that is called eightBall
 
+Create a conditional statement that checks which is the random number and depending on the response it  should be reassigned to eightBall as it follows:
+
+0: It is certain
+1: It is certain
+2: Reply hazy try again
+3: Cannot predict now
+4: Do not count on it
+5: My sources say no
+6: Outlook not so good
+7: Signs point to yes
+
+log in the console eightBall variable
+
+Task4:
+
+create 3 variables:
+number -  one that is a  random whole number between 0 and 1000
+early - true
+age - 18
+
+Create two conditionals folling the below rules:
+
+if it is early and the age is bigger than or equal to 18, log in the console the (number)  and add 1000 more
+
+if it is early and age is bigger or equal to  18 -> log -> Race starts at 9:30 am. Your Number is (number);
+if it is not early and age is bigger than or eqaul to 18 -> log -> Race starts at 11:00 am. Your Number is (number)
+if age is less than 18 -> log -> Race starts at 12:30 pm. You number is (number)
+if none of the conditions above are met -> log -> Please see the registration desk`
