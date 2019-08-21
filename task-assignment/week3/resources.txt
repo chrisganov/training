@@ -1,3 +1,4 @@
+https://www.geeksforgeeks.org/javascript-console-log-with-examples/
 https://javascript.info/types
 https://www.w3schools.com/js/js_math.asp
 https://dev.to/sarah_chima/var-let-and-const--whats-the-difference-69e
