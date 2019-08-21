@@ -1,0 +1,27 @@
+ Each task should be done in a different .js file
+ 
+ Task1:
+ Create a variable called kelvin and set it to 0.
+ Create a variable called celsius and set it to kelvin minus 273
+ Create a variable farenheit and set it to a whole number which is equal to celsius times the result of the devision of 9 and 5 plus 32
+ Create a variable newton and set it to a whole number which is equal to celsius times the result of the devision of 33 and 100
+ 
+ Test if it works, by changin the kelvin to some number and then google a converter to check if all variables are correct.
+
+ All of these variables should be loged in the console the logic has been written (ex: The result of The temperature is (variable result) degrees in (variable name)`
+
+ The strings should be done in two ways - using the standart concat string and using Template strings
+ 
+ Task 2:
+ Create a variable that is equal to your current age.
+ Creeate a varaiable that is equal to 2 called earlyYears
+ Reassign earlyYears to be equal to the current value of earlyYears times 10.5
+ Create a variable that is equal to your age times 4 called laterYears
+ Reassign laterYears to be equal the current value of laterYears times 4
+ Add laterYears and earlyYears to a new variable called myDogYears
+ Create a variable with your name written as a string in lower case letters
+ Use the build in functions for strings to capitalize the first letter of your name (google how it)
+ Log the folling string in the console (using a template string) "My name is (your name). I am (your age) years old in human years which is (your dog age) years old in dog years."
+
+ 
+
