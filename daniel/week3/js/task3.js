@@ -1,5 +1,7 @@
 const randomNumber = Math.floor(Math.random() * 8);
-let eightBall = '';
+// let eightBall = ''; Good work, just a note - when initializing a variable with "let", you don't have to provide an initial value as show below
+let eightBall;
+
 switch(randomNumber) {
   case 0:
     eightBall = 'It is certain';
