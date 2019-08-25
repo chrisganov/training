@@ -1,1 +1,1 @@
-# Repository for training purposes
+# Repository for training purposes for people who _DO NOT MAKE CHANGES IN MASTER_**
