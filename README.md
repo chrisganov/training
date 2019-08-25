@@ -1,1 +1,1 @@
-# Repository for training purposes for people who _DO NOT MAKE CHANGES IN MASTER_**
+# Repository for training purposes for people who _DO NOT MAKE CHANGES IN MASTER BRANCH_
