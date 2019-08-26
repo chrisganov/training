@@ -1,0 +1,10 @@
+https://javascript.info/function-basics
+https://javascript.info/function-expressions-arrows
+https://javascript.info/while-for
+https://javascript.info/array
+https://javascript.info/array-methods
+https://www.w3schools.com/jsref/jsref_for.asp
+https://www.w3schools.com/js/js_arrays.asp
+https://www.tutorialrepublic.com/javascript-reference/javascript-array-object.php - IMPORTANT!!!!
+https://www.w3schools.com/js/js_arrow_function.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions

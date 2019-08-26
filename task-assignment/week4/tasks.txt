@@ -2,7 +2,7 @@ All tasks should be created in separate .js files.
 
 Task1:
 
-You need to create 4 functions with the folliwing logic:
+You need to create 4 functions (all arrow functions) with the folliwing logic:
 
 1. getUserChoice which takes one argument. The argument will be expected to be a string.
 Make sure that firs you transform that argument to lower case, so there are no issues or erros.
