@@ -51,7 +51,6 @@ age - 18
 Create two conditionals folling the below rules:
 
 if it is early and the age is bigger than or equal to 18, log in the console the (number)  and add 1000 more
-
 if it is early and age is bigger or equal to  18 -> log -> Race starts at 9:30 am. Your Number is (number);
 if it is not early and age is bigger than or eqaul to 18 -> log -> Race starts at 11:00 am. Your Number is (number)
 if age is less than 18 -> log -> Race starts at 12:30 pm. You number is (number)
