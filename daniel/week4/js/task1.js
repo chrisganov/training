@@ -1,9 +1,11 @@
- getUserChoice = input =>{
+// Only minor problems, overall good work 
+
+getUserChoice = input => { //TODO where is your declaration for the function?
   input = input.toLowerCase();
   if (input === 'rock' || input==='paper' || input ==='scissors') {
     return input;
   } else {
-    console.log('not a valid choice');
+    console.log('not a valid choice'); //TODO:  'not a valid choice' does not help the user to know what are his options
   }
 };
 
@@ -18,7 +20,7 @@ getComputerChoice = () => {
   	};
 }
 
-determineWinner = (userChoice,computerChoice) => {
+determineWinner = (userChoice, computerChoice) => { // TODO:  where is your declaration for the function?
   if (userChoice === computerChoice) {
     return 'It\'s a tie!';
   } else if (userChoice === 'rock') {
@@ -44,7 +46,7 @@ determineWinner = (userChoice,computerChoice) => {
   }
 };
 
-playGame = input => {
+playGame = input => { // TODO:  where is your declaration for the function?
   let userChoice = getUserChoice(input);
   let computerChoice = getComputerChoice()
   console.log(`User threw ${userChoice}`);
