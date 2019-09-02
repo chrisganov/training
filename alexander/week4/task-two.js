@@ -4,7 +4,6 @@ secretMessage.push("to","Program");
 secretMessage.splice(7,1, "right");
 secretMessage.shift();
 secretMessage.unshift("Programming");
-// secretMessage = secretMessage.map(item => 
-//      item.replace('get','know').replace('right','know').replace('the','know').replace('first','know').replace('time','know')
-// ); TODO: Use splice, it does not work, since the words you have replaced have to be replaced with only one word -"know" and not change each word to "know"
+secretMessage.splice(6,5,"know")
+
 console.log(secretMessage.join(" "));
