@@ -1,9 +1,0 @@
-https://www.geeksforgeeks.org/javascript-console-log-with-examples/
-https://javascript.info/types
-https://www.w3schools.com/js/js_math.asp
-https://dev.to/sarah_chima/var-let-and-const--whats-the-difference-69e
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
-https://wesbos.com/javascript-template-strings/
-https://www.w3schools.com/jsref/jsref_concat_string.asp
-https://javascript.info/ifelse
-https://javascript.info/switch
