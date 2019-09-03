@@ -1,26 +1,18 @@
+//let vowels = ["a", "e", "i", "o", "u"];
+//let resultArray = [];
+//-------------------------
+const vowels = "aeiou";
 let input = 'samurai life above all';
-let vowels = ["a", "e", "i", "o", "u"];
+
+
 let resultArray = [];
-// let inputIndex = 0; don't need it
-// let vowelsIndex = 0; don't need it
-
-// Just because in the task im saying "while something something" doesn't mean that the loop should be while - it was intentional, for loop is also based a similar condtion, try it out
-
-while(inputIndex < input.length){ //TODO:  Wrong loop, read more about "for" loop and rewrite it
-inputIndex++;
-  while(vowelsIndex < input.length){ // TODO: Wrong loop again, it should be "for"
-    vowelsIndex++
-    if(input[inputIndex] === vowels[vowelsIndex]){
-      resultArray.push(input[inputIndex]);
-    }
-    if(input[inputIndex] === 'e' || 'u'){ // TODO: look at the task again... specifically how it is numbered this particular "if". There's a reason for the indent.
-      resultArray.push(input[inputIndex]);
-    }
-  }
+for (i = 0; i < input.length; i++) {
+  if(vowels.indexOf(input[i]) >= 0) resultArray += input[i];
 }
-
-let whaleTranslate = resultArray.join('').toUpperCase();
+let whaleTranslate = resultArray.toUpperCase();
 console.log(whaleTranslate);
+
+//Доста помощ от нета :(
 /*
 Task3
 

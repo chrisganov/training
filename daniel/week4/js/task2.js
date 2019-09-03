@@ -1,14 +1,14 @@
-// Good, only do the TODO, since I want you to know how to select values if you know their index without using a method
-
 let secretMessage = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '-Probably said it once at some point,', 'Ivo', 'Dukov,', 'Learn', 'JavaScript'];
 secretMessage.pop();
 secretMessage.push('to', 'Program');
 secretMessage.splice(7,1,'right'); //TODO:  This is done ok, but I prefer you re-write this line, by selecting it (google how to select a value within an array based on index). Hint: It's not a method and it should be reassigned
+const newArray = Object.assign([], secretMessage, {[7]: 'right'}); // мисля че това искаш да направя!
 secretMessage.shift();
 secretMessage.unshift('Programing');
-secretMessage.splice(6, 5, 'know,'); // I missed in the task that there should be a semicolon, but I added it, so it's ok
+secretMessage.splice(6, 5, 'know,'); 
 console.log(secretMessage.join(' '));
-// output: Programing,is,not,about,what,you,know,it,is,about,what,you,can,figure,out.,-Probably said it once at some point,,Ivo,Dukov,,Learn,to,Program
+
+
 
 
 /*

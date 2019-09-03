@@ -1,15 +1,13 @@
-// Only minor problems, overall good work 
-
-getUserChoice = input => { //TODO where is your declaration for the function?
+const getUserChoice = input => { 
   input = input.toLowerCase();
   if (input === 'rock' || input==='paper' || input ==='scissors') {
     return input;
   } else {
-    console.log('not a valid choice'); //TODO:  'not a valid choice' does not help the user to know what are his options
+    console.log('Your choice must be: Rock, Paper or Scissors!');
   }
 };
 
-getComputerChoice = () => {
+const getComputerChoice = () => {
   switch(Math.floor(Math.random()*3)) {
     case 0:
       return 'rock';
@@ -20,7 +18,7 @@ getComputerChoice = () => {
   	};
 }
 
-determineWinner = (userChoice, computerChoice) => { // TODO:  where is your declaration for the function?
+const determineWinner = (userChoice, computerChoice) => {
   if (userChoice === computerChoice) {
     return 'It\'s a tie!';
   } else if (userChoice === 'rock') {
@@ -46,7 +44,7 @@ determineWinner = (userChoice, computerChoice) => { // TODO:  where is your decl
   }
 };
 
-playGame = input => { // TODO:  where is your declaration for the function?
+const playGame = input => {
   let userChoice = getUserChoice(input);
   let computerChoice = getComputerChoice()
   console.log(`User threw ${userChoice}`);
