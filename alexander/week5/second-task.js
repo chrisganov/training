@@ -1,4 +1,4 @@
-let price = 0;
+// let price = 0; TODO: you don't need this
 const menu = {
     _courses:{
        _appetizers:[],
@@ -40,16 +40,25 @@ const menu = {
    getRandomDishFromCource(courseName){
     const dishes = this._courses[courseName];
     const randomIndex = Math.floor(Math.random() * dishes.length);
-    const dish = dishes[randomIndex].name;
-    price += dishes[randomIndex].price;
-    return dish;
+   //  const dish = dishes[randomIndex].name; TODO: Why the name?
+   //  price += dishes[randomIndex].price; TODO: Why the price?
+   //  return dish;
+      
+      // OR just return:
+
+      return dishes[randomIndex];
    },
    generateRandomMeal(){
     const main = this.getRandomDishFromCource("mains");
     const apetizer = this.getRandomDishFromCource("appetizers");
     const desert = this.getRandomDishFromCource("deserts");
-    return `We will start with ${main} then we will get apetizers ${apetizer}, the we will finish with deserts ${desert} the price is ${price}$`;
-   },
+   // TODO  The easiest way to get the price:
+      const totalPrice = apetizer.price + main.price + desert.price;
+      // TODO: You were returning objects - these objects have a name and a price, therefore you should have written the following string:
+      // return `We will start with ${main} then we will get apetizers ${apetizer}, the we will finish with deserts ${desert} the price is ${price}$`;
+      return `We will start with ${main.name} then we will get apetizers ${apetizer.name}, the we will finish with deserts ${desert.name} the price is ${totalPrice}$`;
+
+      },
    };
   
  menu.addDish("mains", "salata",150);
@@ -63,4 +72,3 @@ const menu = {
  menu.addDish("deserts", "grozde",3000);
 const final = menu.generateRandomMeal();
 console.log(final);
-

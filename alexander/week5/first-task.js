@@ -12,5 +12,4 @@ console.log(`Basically has been used ${basicallyMatchCount} time`);
 console.log("The v1.00 of the story contains " + story.length + " words");
 console.log("The v2.00 of the story contains " + newStory.length + " words");
 
-
-
+// TODO: The task is missing
