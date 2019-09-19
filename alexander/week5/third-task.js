@@ -1,51 +1,134 @@
 class Media {
   // TODO: Media is the shared class - all other classes have these properties
-  constructor(title) {
+  constructor(title,ratings) {
     this._title = title;
     this._isCheckedOut = false;
-    this._ratings = [];
+    this._ratings = ratings;
   }
-
   get title() {
-    //  To get the title
     return this._title;
   }
   get isCheckedOut() {
-    // To check if it is checked ouy
     return this._isCheckedOut;
   }
   get ratings() {
-    // To get the raiting
     return this._ratings;
   }
     toggleCheckOutStatus() {
-    // If this._isCheckedOut is true, "!" will make it false. If it is false, "!" will make it true
         this._isCheckedOut = !this._isCheckedOut; 
                            }
   set isCheckedOut(isCheckedOut) {
     this._isCheckedOut = isCheckedOut;
   }
   getAverageRating() {
-    // based on the inputs in the array, write logic that returns the avarage rating
+    let averageRating = 0;
+    for(let a = 0; a < this._ratings.length; a++){
+      averageRating += this._ratings[a];
+    }
+  return averageRating /= this._ratings.length;
   }
   addRating(rating) {
-    // Add the rating into the raiting array
+    this._ratings = rating;
   }
 }
 
-class Books { // something is missing
-
+class Books extends Media{ 
+constructor(title,ratings,author,pages){
+super(title,ratings);
+this._author = author;
+this._pages = pages;
+}
+get title(){
+  return title;
+}
+// get isCheckedOut(){
+//   return super(this.isCheckedOut)
+// }
+get ratings(){
+  return this.ratings;
+}
+get authors(){
+  return this._author;
+}
+get pages(){
+  return this._pages;
+}
+getAverageRating(){
+  super.getAverageRating()
+}
+toggleCheckOutStatus(){
+  super.toggleCheckOutStatus()
+}
+addRating(){
+  super.addRating()
+}
 }
 
-class Movies { // something is missing
-
+class Movies extends Media{ 
+  constructor(title,ratings,director,runTime){
+    super(title,ratings);
+    this._director = director;
+    this._runTime = runTime;
+    }
+    get title(){
+      return this.title;
+    }
+    // get isCheckedOut(){
+    //   return super(this._isCheckedOut)
+    // }
+    get ratings(){
+      return this.ratings;
+    }
+    get directors(){
+      return this._director;
+    }
+    get runTime(){
+      return this._runTime;
+    }
+    getAverageRating(){
+      super.getAverageRating()
+    }
+    toggleCheckOutStatus(){
+      super.toggleCheckOutStatus()
+    }
+    addRating(){
+      super.addRating()
+    }
 }
 
-class CD { // something is missing
-
+class CD extends Media{ 
+  constructor(title,ratings,artist,songs){
+    super(title,ratings);
+    this._artist = artist;
+    this._songs = songs;
+    }
+    get title(){
+      return this.title;
+    }
+    // get isCheckedOut(){
+    //   return 
+    // }
+    get ratings(){
+      return this.ratings;
+    }
+    get artists(){
+      return this._artist;
+    }
+    get songs(){
+      return this._songs;
+    }
+    getAverageRating(){
+    return  super.getAverageRating(); 
+    }
+    toggleCheckOutStatus(){
+     return super.toggleCheckOutStatus();
+    }
+    addRating(){
+     return super.addRating();
+    }
 }
+const cd = new CD("rings",[1,2,3],"pesho",["balls to the wall","smoke on the water","galena"]);
+console.log(cd);
+console.log(cd.getAverageRating());
 
-/*
-All of the methods should be functional, therefore, you need to test them as you had tested the second task.
-Add values, console log the avarage, change the checkout... etc.
-*/
+

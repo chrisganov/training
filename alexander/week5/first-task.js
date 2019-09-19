@@ -11,5 +11,10 @@ console.log(`Very has been used ${veryMatchCount} times`);
 console.log(`Basically has been used ${basicallyMatchCount} time`);
 console.log("The v1.00 of the story contains " + story.length + " words");
 console.log("The v2.00 of the story contains " + newStory.length + " words");
+console.log(`Really has been used ${reallyMatchCount} times`);
+console.log(`Very has been used ${veryMatchCount} times`);
+console.log(`Basically has been used ${basicallyMatchCount} time`);
+let dotMatch = story.match(/\./g);
+let dotMatchCount = dotMatch.length;
+console.log(`The story has ${dotMatchCount} sentences`)
 
-// TODO: The task is missing
