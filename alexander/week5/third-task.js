@@ -1,9 +1,8 @@
 class Media {
-  // TODO: Media is the shared class - all other classes have these properties
-  constructor(title,ratings) {
+  constructor(title) {
     this._title = title;
     this._isCheckedOut = false;
-    this._ratings = ratings;
+    this._ratings = [];
   }
   get title() {
     return this._title;
@@ -14,9 +13,9 @@ class Media {
   get ratings() {
     return this._ratings;
   }
-    toggleCheckOutStatus() {
-        this._isCheckedOut = !this._isCheckedOut; 
-                           }
+  toggleCheckOutStatus() {
+    this._isCheckedOut = !this._isCheckedOut; 
+  }
   set isCheckedOut(isCheckedOut) {
     this._isCheckedOut = isCheckedOut;
   }
@@ -28,24 +27,14 @@ class Media {
   return averageRating /= this._ratings.length;
   }
   addRating(rating) {
-    this._ratings = rating;
+    this._ratings.push(rating)
   }
 }
-
-class Books extends Media{ 
-constructor(title,ratings,author,pages){
-super(title,ratings);
+class Book extends Media{ 
+constructor(title,author,pages){
+super(title);
 this._author = author;
 this._pages = pages;
-}
-get title(){
-  return title;
-}
-// get isCheckedOut(){
-//   return super(this.isCheckedOut)
-// }
-get ratings(){
-  return this.ratings;
 }
 get authors(){
   return this._author;
@@ -53,31 +42,12 @@ get authors(){
 get pages(){
   return this._pages;
 }
-getAverageRating(){
-  super.getAverageRating()
 }
-toggleCheckOutStatus(){
-  super.toggleCheckOutStatus()
-}
-addRating(){
-  super.addRating()
-}
-}
-
-class Movies extends Media{ 
-  constructor(title,ratings,director,runTime){
-    super(title,ratings);
+class Movie extends Media{ 
+  constructor(title,director,runTime){
+    super(title);
     this._director = director;
     this._runTime = runTime;
-    }
-    get title(){
-      return this.title;
-    }
-    // get isCheckedOut(){
-    //   return super(this._isCheckedOut)
-    // }
-    get ratings(){
-      return this.ratings;
     }
     get directors(){
       return this._director;
@@ -85,50 +55,47 @@ class Movies extends Media{
     get runTime(){
       return this._runTime;
     }
-    getAverageRating(){
-      super.getAverageRating()
-    }
-    toggleCheckOutStatus(){
-      super.toggleCheckOutStatus()
-    }
-    addRating(){
-      super.addRating()
-    }
 }
 
 class CD extends Media{ 
-  constructor(title,ratings,artist,songs){
-    super(title,ratings);
+  constructor(title,artist,song){
+    super(title);
     this._artist = artist;
-    this._songs = songs;
+    this._song = song;
     }
-    get title(){
-      return this.title;
-    }
-    // get isCheckedOut(){
-    //   return 
-    // }
-    get ratings(){
-      return this.ratings;
-    }
-    get artists(){
+    get artist(){
       return this._artist;
     }
-    get songs(){
-      return this._songs;
-    }
-    getAverageRating(){
-    return  super.getAverageRating(); 
-    }
-    toggleCheckOutStatus(){
-     return super.toggleCheckOutStatus();
-    }
-    addRating(){
-     return super.addRating();
+    get song(){
+      return this._song;
     }
 }
-const cd = new CD("rings",[1,2,3],"pesho",["balls to the wall","smoke on the water","galena"]);
-console.log(cd);
-console.log(cd.getAverageRating());
+// const dre = new CD('The J files', 'Dr. Dre', 'Forget about Dre')
+// dre.addRating(1);
+// dre.addRating(5);
+// dre.addRating(4);
+// console.log(dre.getAverageRating());
+// console.log(dre.isCheckedOut);
+// dre.toggleCheckOutStatus();
+// console.log(dre.isCheckedOut);
+// const dre = new Book('The J files', 'Dr. Dre', 50)
+// dre.addRating(1);
+// dre.addRating(5);
+// dre.addRating(4);
+// console.log(dre.getAverageRating());
+// console.log(dre.isCheckedOut);
+// dre.toggleCheckOutStatus();
+// console.log(dre.isCheckedOut);
+// console.log(dre);
+const dre = new Movie('The J files', 'Dr. Dre', 3.50)
+dre.addRating(1);
+dre.addRating(5);
+dre.addRating(4);
+console.log(dre.getAverageRating());
+console.log(dre.isCheckedOut);
+dre.toggleCheckOutStatus();
+console.log(dre.isCheckedOut);
+console.log(dre);
+
 
 
