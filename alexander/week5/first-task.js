@@ -15,6 +15,10 @@ console.log(`Really has been used ${reallyMatchCount} times`);
 console.log(`Very has been used ${veryMatchCount} times`);
 console.log(`Basically has been used ${basicallyMatchCount} time`);
 let dotMatch = story.match(/\./g);
+const exclamationMatch = story.match(/\!/g); // you needed this
+const exclamationCount = exclamationMatch.length; // you needed this
 let dotMatchCount = dotMatch.length;
-console.log(`The story has ${dotMatchCount} sentences`)
+// console.log(`The story has ${ dotMatchCount } sentences`) this is not correct, since you check only check for ".", but the story also has "!"
 
+const sentanceCount = exclamationCount + dotMatchCount;
+console.log(`The story has ${ sentanceCount } sentences`)

@@ -70,32 +70,15 @@ class CD extends Media{
       return this._song;
     }
 }
-// const dre = new CD('The J files', 'Dr. Dre', 'Forget about Dre')
-// dre.addRating(1);
-// dre.addRating(5);
-// dre.addRating(4);
-// console.log(dre.getAverageRating());
-// console.log(dre.isCheckedOut);
-// dre.toggleCheckOutStatus();
-// console.log(dre.isCheckedOut);
-// const dre = new Book('The J files', 'Dr. Dre', 50)
-// dre.addRating(1);
-// dre.addRating(5);
-// dre.addRating(4);
-// console.log(dre.getAverageRating());
-// console.log(dre.isCheckedOut);
-// dre.toggleCheckOutStatus();
-// console.log(dre.isCheckedOut);
-// console.log(dre);
-const dre = new Movie('The J files', 'Dr. Dre', 3.50)
-dre.addRating(1);
-dre.addRating(5);
-dre.addRating(4);
-console.log(dre.getAverageRating());
-console.log(dre.isCheckedOut);
-dre.toggleCheckOutStatus();
-console.log(dre.isCheckedOut);
-console.log(dre);
 
-
-
+const hybridTheory = new CD('Hybrid Theory', 'Linkin Park', 'Papercut')
+console.log(hybridTheory.isCheckedOut)
+hybridTheory.toggleCheckOutStatus();
+console.log(hybridTheory.isCheckedOut);
+console.log(hybridTheory.title)
+console.log(hybridTheory.artist)
+console.log(hybridTheory.song);
+hybridTheory.addRating(2);
+hybridTheory.addRating(3);
+hybridTheory.addRating(4);
+console.log(hybridTheory.getAverageRating())
