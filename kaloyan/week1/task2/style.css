@@ -9,6 +9,14 @@ Stick with classes.
 Overall great job.
 */
 
+/* 
+Task:
+
+Since I have noticed that you might have some trouble with relative paths (ex: url(./image)) I have removed the pictures from your folder.
+
+You need to fix your pictures by linking your files with the pictures which already exist in task-assignment/week1/task_2
+*/
+
 body {
     font-family: Helvetica;
     font-size: 22px;
@@ -140,7 +148,7 @@ footer {
     height: 200px; this sets the whole footer 200px, you need to make 200px height only on the contacts element, 
     excluding the copyright text
     */
-    
+
     /* padding: auto; THIS DOES NOT EXIST - padding does not have "auto" property */
     top: 80px;
 }
