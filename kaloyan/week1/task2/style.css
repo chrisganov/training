@@ -1,3 +1,14 @@
+/* 
+Feedback:
+See below for some additional comments and guidances.
+
+In addition, general tip try to avoid selecting elements such as "header" and then styling them. This is a potential trouble maker
+since you are globally changing the styles and if you add another element of the same type, the element will inherit that style.
+Stick with classes.
+
+Overall great job.
+*/
+
 body {
     font-family: Helvetica;
     font-size: 22px;
@@ -87,7 +98,12 @@ main {
     padding: auto;
     height: 500px;
     width: 1200px;
-    background-image: url(/img-locations-background.jpg);
+    background-image: url(img-locations-background.jpg);
+    /* 
+    You had written "/img-locations-background.jpg thus the image was missing in the HTML - to use relative path you had to 
+    insert a "." in the beginning as shown above.
+    In addition, please note that if the image is in the same directory, you could have just written the name of the file 
+    */
     background-size: 1200px 720px;
 }
 
@@ -119,13 +135,24 @@ main {
 
 footer {
     position: relative;
-    height: 200px;
     margin: auto;
-    padding: auto;
+    /* 
+    height: 200px; this sets the whole footer 200px, you need to make 200px height only on the contacts element, 
+    excluding the copyright text
+    */
+    
+    /* padding: auto; THIS DOES NOT EXIST - padding does not have "auto" property */
     top: 80px;
+}
+
+.contacts {
+    height: 200px;
 }
 
 .copyright {
     text-align: left;
-    left: 20px;
+    margin-left: 20px;
+    /* left: 20px; */
+    /* The left was not applied due to element not being specified as a position: relative */
+    /* Another workaround is to add a margin-left: 20px since making the position relative messes up the whole page as shown above */
 }
