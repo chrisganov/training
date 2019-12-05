@@ -65,7 +65,7 @@ main {
     margin: auto;
     height: 700px;
     width: 1200px;
-    background-image: url("img-mission-background.jpg");
+    background-image: url("../../../task-assignment/week1/task_2/img-mission-background.jpg");
 }
 
 .mission-text {
@@ -106,7 +106,7 @@ main {
     padding: auto;
     height: 500px;
     width: 1200px;
-    background-image: url(img-locations-background.jpg);
+    background-image: url("../../../task-assignment/week1/task_2/img-locations-background.jpg");
     /* 
     You had written "/img-locations-background.jpg thus the image was missing in the HTML - to use relative path you had to 
     insert a "." in the beginning as shown above.
