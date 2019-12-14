@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    opacity: 0.9;
+    color: white;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+#navbar-img {
+    max-height: 64px;
+}
+
+#header {
+    background-image: url(/kaloyan/week2/images/heihachi-kazuya-home.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 690px;
+}
+
+#information-container {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+#mobile-menu {
+    opacity: 1;
+}
+
+#harada-img {
+    height:
+}
+
+@media screen and (max-width: 670px) {
+    #header {
+        min-height: 300px;
+    }
+    #navbar-img {
+        max-height: 56px;
+    }
+}

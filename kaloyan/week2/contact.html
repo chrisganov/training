@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>Contact Me</title>
+    <link href="/kaloyan/week2/css/contact.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="head">
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper black">
+                <div class="container">
+                    <a href="/kaloyan/week2/home.html" class="brand-logo"><img height="64" class=""
+                            src="/kaloyan/week2/images/logo.png"></a>
+                    <img src="/kaloyan/week2/images/bryan-icon.jpg" height="64" class="right hide-on-med-and-down">
+                    <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="/kaloyan/week2/about.html"
+                                class="red-text btn-small black waves-effect waves-light">About me</a></li>
+                        <li><a href="/kaloyan/week2/catalog.html"
+                                class="red-text btn-small black waves-effect waves-light">Catalog</a></li>
+                        <li><a href="/kaloyan/week2/contact.html"
+                                class="red-text btn-small black waves-effect waves-light">Contact me</a></li>
+                    </ul>
+                    <!-- mobile-menu -->
+                    <ul class="sidenav black" id="mobile-menu">
+                        <li><a href="/kaloyan/week2/about.html"
+                                class="red-text btn-small black waves-effect waves-light">About me</a></li>
+                        <li><a href="/kaloyan/week2/catalog.html"
+                                class="red-text btn-small black waves-effect waves-light">Catalog</a></li>
+                        <li><a href="/kaloyan/week2/contact.html"
+                                class="red-text btn-small black waves-effect waves-light">Contact me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container section">
+        <div class="row">
+            <div class="col s12 m8 l6 push-m2 push-l3">
+                <form action="">
+                    <div class="input-field">
+                        <input name="first-name" class="red-text" type="text" id="first-name" required>
+                        <label class="red-text" for="first-name">Your First Name</label>
+                    </div>
+                    <div class="input-field">
+                        <input name="last-name" class="red-text" type="text" id="last-name" required>
+                        <label class="red-text" for="last-name">Your Last Name</label>
+                    </div>
+                    <div class="input-field" name="input-field">
+                        <input type="radio" name="group1" required>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group1" type="radio" />
+                                <span class="red-text">Male</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group1" type="radio" />
+                                <span class="red-text">Female</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input class="with-gap" name="group1" type="radio" />
+                                <span class="red-text">Modern</span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="input-field">
+                        <input type="number" id="number" min="18" max="420" class="red-text" required>
+                        <label for="number" class="red-text">Your Age</label>
+                    </div>
+                    <div class="input-field">
+                        <textarea name="message" id="message" class="materialize-textarea red-text" required></textarea>
+                        <label for="message" class="red-text">Кво ти треа?</label>
+                    </div>
+                    <div class="input-field center">
+                        <button class="btn-small red black-text pulse waves-effect waves-dark"><i
+                                class="material-icons">send</i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="page-footer black lighten-4">
+            <div class="container">
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align">&copy; 2019 k0mata</div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
+
+</body>
+
+</html>
