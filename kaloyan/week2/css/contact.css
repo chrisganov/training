@@ -1,9 +1,16 @@
+/* The forms were nto properly styled. You can see that when you select an input
+the bottom border is green. Same goes for the radio button. It does not add up with the design. */
+
 body {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     opacity: 0.9;
     color: white;
+}
+
+div.navbar-fixed {
+    z-index: 999;
 }
 
 #navbar-img {
