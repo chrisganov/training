@@ -1,6 +1,12 @@
 **Open the file CREATE_ME and follow the instructions to re-create the html page.**
 <u>Use external CSS file (create a CSS file and import it into the HTML)</u>
 
+**First Task**
+*https://drive.google.com/open?id=1HdD2x55eh2_c_J_gkD7_yO60KI9YkO8v
+
+**Second Task**
+* https://drive.google.com/open?id=1GJ-gltsZLsH0A128XW2HXRX_dFdvfgQz
+
 
 **Resources:**
 
