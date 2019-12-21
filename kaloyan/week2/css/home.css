@@ -1,0 +1,64 @@
+/* 
+See: https://css-tricks.com/multiple-class-id-selectors/ 
+
+Note: IDs are usually used for selections for JavaScript, class names are used for CSS. The above link
+shows how you can select an element with multiple class names.
+
+Other workaround is by using nesting. In order to understand better and faster how this would work, please remind me
+of this so I can show you.
+*/
+
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    opacity: 0.9;
+    color: white;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+/*
+    Had to research myself, there was an issue where the menu is actually behind the menu itself so that's why it couldn't be clicked
+    It should work now.
+*/
+div.navbar-fixed {
+    z-index: 999;
+}
+
+#navbar-img {
+    max-height: 64px;
+}
+
+#header {
+    background-image: url(/kaloyan/week2/images/heihachi-kazuya-home.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 690px;
+}
+
+#information-container {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+#mobile-menu {
+    opacity: 1;
+}
+
+/* Don't know why this was here...  */
+
+/* #harada-img {
+    height:
+} */
+
+@media screen and (max-width: 670px) {
+    #header {
+        min-height: 300px;
+    }
+    #navbar-img {
+        max-height: 56px;
+    }
+}
