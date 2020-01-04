@@ -7,7 +7,7 @@
     font-weight: bold;
     text-align: center;
     color: khaki;
-    background-image: url(pattern.jpeg) /* this is not the URL for the pattern.jpeg, it should be images/pattern.jpeg */
+    background-image: url("https://drive.google.com/uc?export=view&id=1eQ11D-FYo97QrqkW6lKqWSFdgAsn7ANs") /* this is not the URL for the pattern.jpeg, it should be images/pattern.jpeg */
 }
 
 #div {
