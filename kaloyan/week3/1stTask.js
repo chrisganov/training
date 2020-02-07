@@ -1,5 +1,9 @@
-const tempConverter = () => {
-    let kelvin = 0;
+// If you are going to use a function, then you should have added a variable
+// for kelvins so you can call the function and get a dynamical result
+// const tempConverter = () => {
+const tempConverter = (temp) => {
+    // let kelvin = 0;
+    let kelvin = temp;
     let celsius = kelvin - 273;
     let divisionNumberOne = (9 / 5) + 32;
 
@@ -16,4 +20,4 @@ const tempConverter = () => {
     console.log(`The value of the newton variable is equal to ${newton}, but isn't it used for force measurement?`);
 }
 
-tempConverter();
+tempConverter(10);

@@ -1,3 +1,4 @@
+// Nice.
 const assignDependingOnRandomNum = () => {
     const randomNumber = Math.round(Math.random() * 7);
     let eightBall = "";
