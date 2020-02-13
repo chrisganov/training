@@ -6,7 +6,7 @@ const tempConverter = (temp) => {
     let kelvin = temp;
     let celsius = kelvin - 273;
     let divisionNumberOne = (9 / 5) + 32;
-
+    debugger;
     let farenheit = Math.round(celsius * divisionNumberOne);
     let newton = Math.round(celsius * (33 / 100));
 
