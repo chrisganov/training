@@ -12,7 +12,7 @@ const thirdTask = () => {
       }
     }
 
-    if (input[inputIndex] === 'e' || input[inputIndex] === 'u') {
+    if (input[inputIndex] === ('e' || 'u')) {
       resultArray.push(input[inputIndex]);
     }
   }

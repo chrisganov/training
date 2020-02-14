@@ -71,6 +71,12 @@ const determineWinner = (getUserChoice, getComputerChoice) => {
 };
 
 const playGame = (input) => {
+ // Check if the input is type "string" using typeof(input)
+  //
+  // if (typeof(input) !== 'string') {
+  //   return console.log('Input is not string!')
+  // }
+
   const user = getUserChoice(input);
   const computer = getComputerChoice();
 
